@@ -31,7 +31,7 @@ def files_in_directory(dir):
 
 
 if __name__ == '__main__':
-    file_list, _ = files_in_directory('AmazonData')
+    file_list, _ = files_in_directory('../AmazonData')
 
     asin_brand = []
     for file in tqdm(file_list):
