@@ -38,7 +38,7 @@ if __name__ == '__main__':
             with gzip.open(file) as f:
                 for i, l in enumerate(f):
                     dataset.append(json.loads(l.strip()))
-                    if i < 200000: continue
+                    if i < 10000: continue
                     else: break
     df = pd.DataFrame.from_dict(dataset)
     df.to_csv('Datasetjson.csv', index=False)
